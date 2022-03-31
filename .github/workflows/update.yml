@@ -3,7 +3,7 @@ name: Update Packages
 on:
   workflow_dispatch:
   schedule:
-    - cron: '00 00 * * 6'
+    - cron: '00 22 * * 5'
 
 env:
   TZ: Asia/Shanghai
