@@ -3,8 +3,8 @@ name: Update Packages
 on:
   repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: '00 22 * * 5'
+#   schedule:
+#     - cron: '00 22 * * 5'
 
 env:
   TZ: Asia/Shanghai
