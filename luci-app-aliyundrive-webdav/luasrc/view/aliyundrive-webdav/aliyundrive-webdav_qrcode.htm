@@ -104,7 +104,7 @@
         // 清除二维码
         make.clear();
         // 获取通信数据
-        XHR.get( '<%=luci.dispatcher.build_url("admin", "nas", "aliyundrive-webdav","qrcode")%>', null, ( x, d ) => {
+        XHR.get( '<%=luci.dispatcher.build_url("admin", "services", "aliyundrive-webdav","qrcode")%>', null, ( x, d ) => {
             if ( x.status != 200 ) {
                 alert('获取二维码失败!');
                 return false;
@@ -114,7 +114,7 @@
             // 创建二维码
             make.makeCode( d.codeContent );
             // 监听扫码反馈
-            XHR.poll( 3, '<%=luci.dispatcher.build_url("admin", "nas", "aliyundrive-webdav", "query")%>', { t: d.t, ck: d.ck }, ( x, d ) => {
+            XHR.poll( 3, '<%=luci.dispatcher.build_url("admin", "services", "aliyundrive-webdav", "query")%>', { t: d.t, ck: d.ck }, ( x, d ) => {
                 if ( d.refresh_token.trim() ) {
                     // 清除线程
                     XHR.halt();
