@@ -30,6 +30,15 @@ rm -rf my-default-settings/files/usr/lib/lua/luci/view/admin_status/index/links.
 wget --no-check-certificate https://github.com/womade/OpenWrt-Packages/raw/main/.github/diy/luci/link.html -O my-default-settings/files/usr/lib/lua/luci/view/admin_status/index/links.htm
 
 
+sed -i "s/supes.top/ssss.fun/g" my-default-settings/files/etc/uci-defaults/99-default-settings
+sed -i "s/supes.top/ssss.fun/g" luci-app-attendedsysupgrade/root/etc/config/attendedsysupgrade
+sed -i "s/supes.top/ssss.fun/g" luci-app-attendedsysupgrade/htdocs/luci-static/resources/view/attendedsysupgrade/overview.js
+sed -i "s/supes.top/ssss.fun/g" luci-app-gpsysupgrade/luasrc/model/cbi/gpsysupgrade/sysupgrade.lua
+sed -i "s/supes.top/ssss.fun/g" luci-app-gpsysupgrade/root/etc/hotplug.d/online/50-opkg-restore
+sed -i "s/supes.top/ssss.fun/g" luci-app-gpsysupgrade/luasrc/view/gpsysupgrade/system_version.htm
+sed -i "s/supes.top/ssss.fun/g" my-default-settings/files/etc/nginx/conf.d/webdav.conf.sample
+
+
 # EXIT
 rm -rf ./*/.git
 rm -f ./*/.gitattributes
