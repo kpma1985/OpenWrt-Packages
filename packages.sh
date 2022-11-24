@@ -20,10 +20,6 @@ sed -i "s/'UTC'/'CST-8'\n   set system.@system[-1].zonename='Asia\/Shanghai'/g" 
 # Modify banner
 wget --no-check-certificate https://raw.githubusercontent.com/womade/LEDE_actions/main/modify/banner/banner -O base-files/files/etc/banner
 
-# Modify wireless
-sed -i 's/OpenWrt/SuperNet/g' kernel/mac80211/files/lib/wifi/mac80211.sh
-sed -i 's/disabled=1/disabled=0/g' kernel/mac80211/files/lib/wifi/mac80211.sh
-
 
 
 
