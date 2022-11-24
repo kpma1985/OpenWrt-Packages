@@ -2,7 +2,7 @@
 
 git clone https://github.com/kiddin9/openwrt-packages
 rm -rf openwrt-packages/README.md
-mv -n openwrt-packages/* ./ ; rm -Rf openwrt-packages
+mv -n openwrt-packages/* packages ; rm -rf openwrt-packages
 
 # EXIT
 rm -rf ./*/.git
