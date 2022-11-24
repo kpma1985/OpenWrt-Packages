@@ -5,27 +5,17 @@ git clone https://github.com/kiddin9/openwrt-packages
 rm -rf openwrt-packages/*.md
 mv -n openwrt-packages/* ./ ; rm -Rf openwrt-packages
 
-# ============================================================
-# PACKAGES END
-# ============================================================
-
-
-
-
-
-# ------------------------------------------------------------
-# MODIFY START
-# ------------------------------------------------------------
-
-# 调整阿里云盘到存储菜单
-sed -i 's/services/nas/g' luci-app-aliyundrive-webdav/luasrc/controller/*.lua
-sed -i 's/services/nas/g' luci-app-aliyundrive-webdav/luasrc/model/cbi/aliyundrive-webdav/*.lua
-sed -i 's/services/nas/g' luci-app-aliyundrive-webdav/luasrc/view/aliyundrive-webdav/*.htm
-
-# ------------------------------------------------------------
-# MODIFY END
-# ------------------------------------------------------------
-
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" *
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*/*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*/*/*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*/*/*/*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*/*/*/*/*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*/*/*/*/*/*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*/*/*/*/*/*/*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*/*/*/*/*/*/*/*
+sed -i "s|https://github.com/kiddin9/|https://msg.ssss.fun#|g" */*/*/*/*/*/*/*/*/*/*
 
 # EXIT
 rm -rf ./*/.git
