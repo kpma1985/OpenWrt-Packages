@@ -1,8 +1,7 @@
 #!/bin/bash
 
 git clone https://github.com/kiddin9/openwrt-packages
-mv openwrt-packages/* ../
-rm -rf openwrt-packages
+mv openwrt-packages $GITHUB_WORKSPACE/packages
 
 
 # EXIT
