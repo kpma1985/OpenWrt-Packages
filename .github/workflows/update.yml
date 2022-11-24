@@ -36,12 +36,12 @@ jobs:
     - name: Clone packages
       run: |
         cd $GITHUB_WORKSPACE
-        chmod +x packages.sh
+        rm -rf packages
         git clone https://github.com/womade/OpenWrt-Packages.git packages
         cd packages
         rm -Rf *
         git rm --cache *
-        $GITHUB_WORKSPACE/packages.sh
+        bash $GITHUB_WORKSPACE/packages.sh
         rm -rf ./*/.git
         rm -f ./*/.gitattributes
         rm -rf ./*/.svn
