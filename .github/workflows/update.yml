@@ -38,8 +38,16 @@ jobs:
         cd $GITHUB_WORKSPACE
         chmod +x packages.sh
         git clone https://github.com/womade/OpenWrt-Packages.git packages
-        rm -rf packages/*
+        cd packages
+        rm -Rf *
+        git rm --cache *
         $GITHUB_WORKSPACE/packages.sh
+        rm -rf ./*/.git
+        rm -f ./*/.gitattributes
+        rm -rf ./*/.svn
+        rm -rf ./*/.github
+        rm -rf ./*/.gitignore
+        exit 0
     - name: Upload packages
       env: 
         GITHUB_TOKEN: ${{ secrets.R_TOKEN }}
