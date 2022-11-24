@@ -1,6 +1,8 @@
 #!/bin/bash
 
-git clone https://github.com/kiddin9/openwrt-packages packages
+git clone https://github.com/kiddin9/openwrt-packages
+mv openwrt-packages/* ../
+rm -rf openwrt-packages
 
 
 # EXIT
