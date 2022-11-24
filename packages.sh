@@ -1,8 +1,8 @@
 #!/bin/bash
 
-git clone https://github.com/kiddin9/openwrt-packages
-mv openwrt-packages $GITHUB_WORKSPACE/packages
-
+git clone https://github.com/kiddin9/openwrt-packages ops
+rm -rf ops/README.md
+mv -n ops/* ./ ; rm -Rf ops
 
 # EXIT
 rm -rf ./*/.git
