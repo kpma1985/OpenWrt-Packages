@@ -1,13 +1,9 @@
 #!/bin/bash
 
-git clone https://github.com/kenzok8/openwrt-packages ops
-git clone https://github.com/kenzok8/small dps
+git clone https://github.com/kinddin9/openwrt-packages
 
-mv -n package/* ./ ; rm -Rf package
-rm -rf ops/README.md
-rm -rf dps/README.md
-mv -n ops/* ./ ; rm -Rf ops
-mv -n dps/* ./ ; rm -Rf dps
+rm -rf openwrt-packages/*.md
+mv -n openwrt-packages/* ./ ; rm -Rf openwrt-packages
 
 # ============================================================
 # PACKAGES END
