@@ -1,8 +1,8 @@
 #!/bin/bash
 
-git clone https://github.com/kiddin9/openwrt-packages ops
-rm -rf ops/README.md
-mv -n ops/* ./ ; rm -Rf ops
+git clone https://github.com/kiddin9/openwrt-packages
+rm -rf openwrt-packages/README.md
+mv -n openwrt-packages/* ./ ; rm -Rf openwrt-packages
 
 # EXIT
 rm -rf ./*/.git
