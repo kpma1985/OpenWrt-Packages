@@ -19,7 +19,7 @@ sed -i 's/OpenWrt/SuperNet/g' my-default-settings/files/etc/uci-defaults/99-defa
 sed -i "s/'UTC'/'CST-8'\n   set system.@system[-1].zonename='Asia\/Shanghai'/g" base-files/files/bin/config_generate
 
 # Modify banner
-wget --no-check-certificate https://raw.githubusercontent.com/womade/LEDE_actions/main/modify/banner/banner -O base-files/files/etc/banner
+wget --no-check-certificate https://github.com/womade/LEDE_actions/raw/main/modify/etc/banner -O base-files/files/etc/banner
 
 
 sed -i "s/Kiddin'/Y-ZHENG/g" base-files/files/etc/openwrt_release
