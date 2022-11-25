@@ -7,7 +7,7 @@
 version=`uci -q get base_config.@status[0].version`
 
 hostname=`uci -q get system.@system[0].hostname`
-[ -n "${hostname}" ] || hostname="OpenWrt"
+[ -n "${hostname}" ] || hostname="SuperNet"
 
 if [ "$(uci -q get dhcp.@dnsmasq[0].port)" != "53" ]; then
 	uci -q set dhcp.@dnsmasq[0].port='53'
@@ -15,7 +15,7 @@ if [ "$(uci -q get dhcp.@dnsmasq[0].port)" != "53" ]; then
 fi
 
 uci -q batch <<EOF
-set attendedsysupgrade.server.url='https://op.supes.top'
+set attendedsysupgrade.server.url='https://op.ssss.fun'
 commit attendedsysupgrade
 EOF
 
