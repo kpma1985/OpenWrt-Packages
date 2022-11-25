@@ -21,7 +21,7 @@ sed -i "s/'UTC'/'CST-8'\n   set system.@system[-1].zonename='Asia\/Shanghai'/g" 
 # Modify banner
 wget --no-check-certificate https://github.com/womade/LEDE_actions/raw/main/modify/etc/banner -O base-files/files/etc/banner
 
-
+sed -i "s/%D/SuperNet/g" base-files/files/etc/openwrt_release
 sed -i "s/Kiddin'/Y-ZHENG/g" base-files/files/etc/openwrt_release
 sed -i "s/Kiddin/Y-ZHENG/g" opkg/patches/user_agent.patch
 sed -i "s/Kiddin'/Y-ZHENG/g" luci-app-gpsysupgrade/Makefile
