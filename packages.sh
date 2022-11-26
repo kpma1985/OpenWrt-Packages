@@ -21,8 +21,9 @@ sed -i "s/'UTC'/'CST-8'\n   set system.@system[-1].zonename='Asia\/Shanghai'/g" 
 # Modify banner
 wget --no-check-certificate https://github.com/womade/LEDE_actions/raw/main/modify/etc/banner -O base-files/files/etc/banner
 
-# Theme Edge logo
+# Theme Edge
 wget --no-check-certificate https://github.com/womade/OpenWrt-Themes/raw/main/luci-theme-edge/htdocs/luci-static/edge/logo.png -O luci-theme-edge/htdocs/luci-static/edge/logo.png
+wget --no-check-certificate https://github.com/womade/OpenWrt-Themes/raw/main/luci-theme-edge/htdocs/luci-static/edge/favicon.ico -O luci-theme-edge/htdocs/luci-static/edge/favicon.ico
 
 sed -i "s/%D/SuperNet/g" base-files/files/etc/openwrt_release
 sed -i "s/by Kiddin'/@ Y-ZHENG/g" base-files/files/etc/openwrt_release
