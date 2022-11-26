@@ -2,14 +2,6 @@
 <% if luci.sys.exec("echo -n `uci -q get base_config.@status[0].links`") ~= "0" then %>
 <script>
 		var links = document.createElement('div');
-		links.innerHTML ='<div class="table"><div class="tr"><div class="td left"><a href="https://i.ssss.fun" target="_blank">关于作者</a></div><div class="td left" width="25%"><a href="https://pay.ssss.fun" target="_blank" style="color:orangered">赞助支持</a></div><div class="td left" width="25%"><a href="https://op.ssss.fun" target="_blank">下载更新</a></div><div class="td left" width="25%"><a href="https://msg.ssss.fun" target="_blank">问题反馈</a></div></div></div>';
-		setTimeout(function(){
-		var telegram = document.querySelectorAll(".cbi-section")[0];
-		telegram.appendChild(links);
-		}, 1500);
-		setTimeout(function(){
-		var telegram = document.querySelectorAll(".cbi-section")[0];
-		telegram.appendChild(links);
-		}, 2400);
+		links.innerHTML ='<div class="table"><div class="tr"><div class="td left">关于作者</div><div class="td left" width="33%"><a href="https://pay.ssss.fun" target="_blank" style="color:orangered">👍 赞助支持</a></div><div class="td left" width="33%"><a href="https://msg.ssss.fun" target="_blank">💬 问题反馈</a></div></div></div>';
 </script>
 <%end%>
